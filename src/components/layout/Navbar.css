@@ -19,6 +19,16 @@
   font-size: 1.1rem;
   font-weight: 700;
   color: #1a1a2e;
+  text-decoration: none;
+}
+
+.nav-user {
+  font-size: 0.85rem;
+  color: #666;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .navbar-links {
@@ -37,6 +47,8 @@
   padding: 0.4rem 0.75rem;
   border-radius: 6px;
   transition: background 0.15s;
+  text-decoration: none;
+  font-family: inherit;
 }
 
 .nav-link:hover:not(:disabled) {

@@ -1,0 +1,384 @@
+/* ── Filters Bar ─────────────────────────────────────── */
+.filters-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.25rem;
+  align-items: center;
+}
+
+.filter-search {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.55rem 0.85rem;
+  border: 1.5px solid #dde1f0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.filter-search:focus {
+  border-color: #4361ee;
+}
+
+.filters-bar select {
+  padding: 0.55rem 0.75rem;
+  border: 1.5px solid #dde1f0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  outline: none;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.filters-bar select:focus {
+  border-color: #4361ee;
+}
+
+.btn-clear-filters {
+  padding: 0.55rem 1rem;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  background: transparent;
+  color: #666;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.btn-clear-filters:hover {
+  border-color: #ef5350;
+  color: #ef5350;
+  background: #ffebee;
+}
+
+/* ── No Results ──────────────────────────────────────── */
+.no-results {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #888;
+}
+
+.no-results-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 0.4rem;
+}
+
+.no-results-hint {
+  font-size: 0.9rem;
+}
+
+/* ── Destination Grid ────────────────────────────────── */
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+/* ── Empty State ─────────────────────────────────────── */
+.empty-state {
+  text-align: center;
+  padding: 4rem 1rem;
+  color: #888;
+}
+
+.empty-state-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.empty-state-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.empty-state-hint {
+  font-size: 0.9rem;
+}
+
+/* ── Destination Card ────────────────────────────────── */
+.dest-card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e8eaf6;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.15s;
+}
+
+.dest-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.dest-card-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* Shown when a card has no image URL */
+.dest-card-placeholder {
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(135deg, #e8eaf6 0%, #c5cae9 100%);
+  flex-shrink: 0;
+}
+
+.dest-card-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  flex: 1;
+}
+
+.dest-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.dest-card-title {
+  flex: 1;
+  min-width: 0;
+}
+
+.dest-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dest-location {
+  font-size: 0.82rem;
+  color: #888;
+  margin: 0.15rem 0 0;
+}
+
+.dest-status {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 99px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.dest-priority {
+  font-size: 0.85rem;
+  color: #f4a00a;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.dest-reason {
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.55;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.dest-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+.btn-edit {
+  padding: 0.35rem 0.85rem;
+  border-radius: 6px;
+  border: 1.5px solid #4361ee;
+  background: transparent;
+  color: #4361ee;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+
+.btn-edit:hover {
+  background: #f0f2ff;
+}
+
+.btn-delete {
+  padding: 0.35rem 0.85rem;
+  border-radius: 6px;
+  border: 1.5px solid #ef5350;
+  background: transparent;
+  color: #ef5350;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+
+.btn-delete:hover {
+  background: #ffebee;
+}
+
+/* ── Form Panel Card ─────────────────────────────────── */
+.dest-form-card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e8eaf6;
+  overflow: hidden;
+}
+
+.dest-form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #e8eaf6;
+}
+
+.dest-form-header h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.btn-close {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #888;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  line-height: 1;
+  font-family: inherit;
+}
+
+.btn-close:hover {
+  background: #f5f5f5;
+  color: #333;
+}
+
+.dest-form {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  max-height: calc(100vh - 160px);
+  overflow-y: auto;
+}
+
+.dest-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.dest-form input,
+.dest-form select,
+.dest-form textarea {
+  padding: 0.6rem 0.8rem;
+  border: 1.5px solid #dde1f0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.15s;
+  background: #fff;
+}
+
+.dest-form input:focus,
+.dest-form select:focus,
+.dest-form textarea:focus {
+  border-color: #4361ee;
+}
+
+.dest-form textarea {
+  resize: vertical;
+}
+
+/* ── Form image preview ──────────────────────────────── */
+.img-preview-wrapper {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1.5px solid #dde1f0;
+}
+
+.img-preview {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.img-preview-error {
+  padding: 0.75rem;
+  font-size: 0.85rem;
+  color: #c62828;
+  background: #ffebee;
+  margin: 0;
+}
+
+.img-hint {
+  font-size: 0.8rem;
+  color: #888;
+  margin: 0;
+}
+
+.img-hint a {
+  color: #4361ee;
+  text-decoration: none;
+}
+
+.img-hint a:hover {
+  text-decoration: underline;
+}
+
+/* btn-primary is also defined in LoginPage.css, but since Dashboard
+   doesn't import that file, we re-declare it here for the form. */
+.dest-form .btn-primary {
+  background: #4361ee;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.25rem;
+  transition: background 0.15s;
+  font-family: inherit;
+}
+
+.dest-form .btn-primary:hover:not(:disabled) {
+  background: #3451d1;
+}
+
+.dest-form .btn-primary:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}

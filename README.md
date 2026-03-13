@@ -1,3 +1,5 @@
+# Complete Tier is located towards the bottom of the page, under author.
+
 # 🌍 Travel Bucket List
 
 A personal web application for saving the places you dream of visiting, writing why each destination calls to you, and tracking your progress as you turn wishlist destinations into real memories.
@@ -118,3 +120,42 @@ The landing page is complete. Full application features are under active develop
 ## Author
 
 Aurora Gibson — DIG 4503, Spring 2026
+
+# Travel Bucket List — Complete Tier
+
+## Project Description
+Travel Bucket List is a full-stack web app where users can track and manage their travel destinations. Users can create, edit, delete, and categorize destinations, mark them as Wishlist, In Progress, or Visited, and add images with live previews. The app supports user authentication, ensuring each user only sees their own destinations.
+
+## Deployed App
+[https://Sadieg123.github.io/travel-bucket-list/](https://Sadieg123.github.io/travel-bucket-list/)
+
+## GitHub Repository
+[https://github.com/Sadieg123/travel-bucket-list](https://github.com/Sadieg123/travel-bucket-list)
+
+## Technologies & AI Tool Used
+- **Frontend:** React, React Router (HashRouter)  
+- **Backend / Database:** Firebase Auth & Firestore  
+- **Styling:** CSS modules  
+- **AI Assistance:** Claude Code (planning, coding, debugging, full-stack setup)  
+- **Version Control:** Git & GitHub  
+
+## Planned & Completed Features (6-8 for Complete Tier)
+1. User Authentication — email/password + Google sign-in, session persistence  
+2. Protected Routes — Dashboard accessible only after login  
+3. Full CRUD — add, edit, delete, and view destinations  
+4. Status Tracking — Wishlist → In Progress → Visited  
+5. Search & Filter — by name, country, status, continent, priority  
+6. Image Support — live preview in form, gradient placeholder on cards  
+7. Real-time Firestore Sync — updates immediately for logged-in users  
+8. Firestore Security Rules — users can only access their own data  
+
+## Known Bugs or Limitations
+- Currently, destination images are stored via Firebase Storage URLs; no file size restrictions yet.  
+- The app uses HashRouter, so URLs include `/#/dashboard` instead of clean paths (limitation of GitHub Pages).  
+- No user profile customization beyond basic auth.  
+
+## What I Learned
+- How to plan and structure a full-stack React app using AI assistance.  
+- Integrating Firebase Auth and Firestore to replace localStorage for persistent, user-specific data.  
+- Implementing real-time updates and route protection for a polished, production-ready app.  
+- How to troubleshoot deployment issues with GitHub Pages and HashRouter.  

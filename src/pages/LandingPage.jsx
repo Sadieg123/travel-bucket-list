@@ -1,6 +1,7 @@
+import { useNavigate } from 'react-router-dom';
 import './LandingPage.css';
 
-const plannedFeatures = [
+const features = [
   '🔐 User authentication with email and Google sign-in',
   '➕ Add destinations with a name, country, and reason for visiting',
   '📌 Track status: Wishlist, In Progress, or Visited',
@@ -12,6 +13,8 @@ const plannedFeatures = [
 ];
 
 export default function LandingPage() {
+  const navigate = useNavigate();
+
   return (
     <main className="landing-wrapper">
       <div className="landing-card">
@@ -26,25 +29,24 @@ export default function LandingPage() {
           </p>
         </div>
 
-        {/* Planned Features */}
+        {/* Features */}
         <section className="features-section">
-          <h2>Planned Features</h2>
+          <h2>Features</h2>
           <ul className="features-list">
-            {plannedFeatures.map((feature) => (
+            {features.map((feature) => (
               <li key={feature}>{feature}</li>
             ))}
           </ul>
         </section>
 
-        {/* Status note */}
-        <div className="status-banner">
-          🚧 This app is currently under development. Full features coming soon!
-        </div>
-
-        {/* CTA buttons (non-functional placeholders for now) */}
+        {/* CTA buttons */}
         <div className="landing-actions">
-          <button className="btn-primary" disabled>Get Started</button>
-          <button className="btn-secondary" disabled>Sign In</button>
+          <button className="btn-primary" onClick={() => navigate('/signup')}>
+            Get Started
+          </button>
+          <button className="btn-secondary" onClick={() => navigate('/login')}>
+            Sign In
+          </button>
         </div>
 
       </div>
