@@ -10,7 +10,7 @@ Built for DIG 4503 — Midterm Project.
 
 ## What the App Does
 
-Travel Bucket List gives you a private, organized space to manage your travel goals. You can add destinations from anywhere in the world, attach a photo, write a personal note about why you want to go, and rate how high it sits on your priority list. As you travel, you update each destination's status — moving it from Wishlist to In Progress to Visited — and watch your personal stats grow over time.
+Travel Bucket List gives you a private, organized space to manage your travel goals. You can add destinations from anywhere in the world, attach a photo, write a personal note about why you want to go, and rate how high it sits on your priority list. As you travel, you update each destination's status, moving it from Wishlist to In Progress to Visited, and watch your personal stats grow over time.
 
 All data is tied to your account, so your list is private and accessible from any device.
 
