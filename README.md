@@ -5,7 +5,7 @@
 A personal web application for saving the places you dream of visiting, writing why each destination calls to you, and tracking your progress as you turn wishlist destinations into real memories.
 
 Built for DIG 4503 — Midterm Project.
-test
+
 
 ---
 
@@ -123,6 +123,10 @@ The landing page is complete. Full application features are under active develop
 Aurora Gibson — DIG 4503, Spring 2026
 
 # Travel Bucket List — Complete Tier
+
+<img width="1450" height="858" alt="Screenshot 2026-04-27 at 5 38 39 PM" src="https://github.com/user-attachments/assets/835e8b27-f191-487a-bfa5-7aaa270a7b00" />
+<img width="1450" height="852" alt="Screenshot 2026-04-27 at 7 33 14 PM" src="https://github.com/user-attachments/assets/e9101d2a-653f-4f59-8e22-a8e5b8bd5f05" />
+<img width="1450" height="852" alt="Screenshot 2026-04-27 at 7 34 01 PM" src="https://github.com/user-attachments/assets/37e7faba-2db0-4a7d-8efb-d1b44bf738cb" />
 
 ## Project Description
 Travel Bucket List is a full-stack web app where users can track and manage their travel destinations. Users can create, edit, delete, and categorize destinations, mark them as Wishlist, In Progress, or Visited, and add images with live previews. The app supports user authentication, ensuring each user only sees their own destinations.
